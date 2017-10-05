@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Train Schedules</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" >
+	<!-- Added link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+	<!-- Link to Moment.js should go here -->
+ 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<!-- Javascript File -->
+	<script src="assets/java/app.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center"><h1> Train schedule</h1><h3>Choooooo Choooo</h3></div>
+
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Train Schedule</h3>
+				</div>
+				<table class="table">
+					<thead>
+	   					<tr id="table-heading">
+							<th>Train Name</th>
+							<th>Destination</th> 
+							<th>Frequency</th>
+							<th>Next Arrival</th>
+							<th>Minutes Away</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr></tr>
+					</tbody>
+  				</table>
+			</div>
+		</div>
+
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Add Train</h3>
+					</div>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<label for="train-name">Train Name</label>
+								<input type="text" class="form-control" id="train-name">
+							<div class="form-group">
+								<label for="destination">Destination</label>
+								<input type="text" class="form-control" id="destination">
+							</div>
+							<div class="form-group">
+								<label for="first-train-time">First Train Time (HH:MM - military time)</label>
+								<input type="text" class="form-control" id="first-train-time">
+							</div>
+							<div class="form-group">
+								<label for="frequency">Frequency (min)</label>
+								<input type="text" class="form-control" id="frequency">
+							</div>
+							<button type="submit" class="btn btn-primary" id="log-train-btn">Submit</button>
+						</form>
+					</div>
+				</div>
+			
+		</div>
+		</body>
+		</html>
