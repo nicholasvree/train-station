@@ -1,4 +1,4 @@
-#Train Station
+# Train Station
 A train station app that utilizes Google Firebase to keep track of train schedules.  The application also uses Moment.js to deal with time and dates.
 
 ## Technologies Used
